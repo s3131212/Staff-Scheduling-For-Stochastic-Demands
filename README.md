@@ -1,3 +1,3 @@
 # Staff Scheduling For Stochastic Demands
 This is a simple tutorial for solving the staff scheduling problems using Integer Programming and 
-Two-Stage Stochastic Programs with Recourse. Please read `tutorial.ipynb` or [the online version](https://s3131212.github.io/Staff-Scheduling-For-Stochastic-Demands/).
+Two-Stage Stochastic Programs with Recourse. Please read [the online version](https://s3131212.github.io/Staff-Scheduling-For-Stochastic-Demands/) (recommended) or the [tutorial.ipynb](https://github.com/s3131212/Staff-Scheduling-For-Stochastic-Demands/blob/main/tutorial.ipynb), but the way GitHub render LaTeX in `ipynb` is quite weird.
