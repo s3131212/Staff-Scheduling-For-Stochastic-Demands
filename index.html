@@ -14607,20 +14607,13 @@ The remaining is quite the same, except we now need to consider more scenarios. 
 </tr>
 </tbody>
 </table>
-<p>We'll first change the definition of the objective functions, taking the cost of outsourcing into account.
+<p>We'll first change the definition of the objective functions, taking the cost of outsourcing into account.</p>
 $$
-\sum_{s \in S} P<em>s 
-    ( \sum</em>{j \in J} \sum<em>{t \in T} y</em>{sjt} C_{t}  % hiring cost</p>
-
-<pre><code>+ \sum_{t \in T}\sum_{j \in J} l_{sjt}G_{jt}  % outsourcing
-+ \sum_{t \in T}\sum_{j \in J} z_{sjt} F)
-</code></pre>
+\sum_{s \in S} P_s ( \sum_{j \in J} \sum_{t \in T} y_{sjt} C_{t}+ \sum_{t \in T}\sum_{j \in J} l_{sjt}G_{jt} + \sum_{t \in T}\sum_{j \in J} z_{sjt} F)
+$$<p>The constraints also have to be slightly modified. To satisfy the demand, the summation of employees on duty and the outsourcing workers on duty have to be larger or equals to</p>
 $$
-
-The constraints also have to be slightly modified. To satisfy the demand, the summation of employees on duty and the outsourcing workers on duty have to be larger or equals to 
-$$<p>y<em>{sjt} + l</em>{sjt} \geq D_{sjt} \quad \forall j \in J,\ t \in T, \ s \in S\<br>
-$$
-Remind that we need to first decide how many employees have to be on duty before learning the actual scenario, but we can postpone the decision of hiring the outsourcing workers until we learn the actual scenario.</p>
+y_{sjt} + l_{sjt} \geq D_{sjt} \quad \forall j \in J,\ t \in T, \ s \in S\\  
+$$<p>Remind that we need to first decide how many employees have to be on duty before learning the actual scenario, but we can postpone the decision of hiring the outsourcing workers until we learn the actual scenario.</p>
 <p>Then, the range of $l_{sjt}$.
 $$
 l_{sjt} \leq L_{jt} \quad \forall j \in J,\ t \in T, \ s \in S
